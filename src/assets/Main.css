@@ -36,6 +36,10 @@
     min-height: calc(100vh - 300px);
 }
 
+.section_box.blue{
+    background: #0000ff;
+}
+
 .footer_box{
     width: 100%;
     height: 200px;
