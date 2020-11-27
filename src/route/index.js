@@ -10,8 +10,8 @@ const Routes = ({ auth }) => {
             history={history}
         >
             <Switch>
-            <Route path='/' component={Blue} />
-            <Route path='main' component={Main} />
+            <Route exact path='/' component={Blue} />
+            <Route exact path='/main' component={Main} />
             </Switch>
         </Router>
     );
