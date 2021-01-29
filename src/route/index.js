@@ -1,43 +1,20 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import { Router, Route, Switch } from 'react-router-dom'
+import { Router, Route , Switch } from 'react-router-dom'
 import history from './history'
-
-/*************
-    LayOut
-*************/
-
-import DefaultLayout from '../layout/DefaultLayout'
-
-/*************
-    Component
-*************/
-
-import Auth from '../component/auth/'
-import Agree from '../component/agree/'
-import Canvas from '../component/'
+import Main from '../component/Main'
+import Blue from '../component/Blue'
 
 const Routes = ({ auth }) => {
-  return (
-    <Router
-      history={history}
-    >
-      <Route exact path='/auth' component={Auth} />
-      <Route exact path='/agree' component={Agree} />
-
-      <Switch>
-        <Route exact path={[
-          '/'
-        ]}>
-          <DefaultLayout>
+    return(
+        <Router
+            history={history}
+        >
             <Switch>
-              <Route exact path='/' component={Canvas} />
+            <Route exact path='/' component={Blue} />
+            <Route exact path='/main' component={Main} />
             </Switch>
-          </DefaultLayout>
-        </Route>
-      </Switch>
-    </Router>
-  )
+        </Router>
+    );
 }
 
-export default Routes
+export default Routes;
