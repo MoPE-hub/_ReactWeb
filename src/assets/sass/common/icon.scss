@@ -1,0 +1,77 @@
+[class*="icon-"] {
+  display: inline-block;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon-arrow-location {
+  background-image: url(../../images/icon-arrow-right-sm.png);
+  background-size: .5rem;
+  width: 2rem;
+  height: 1.5rem;
+}
+
+.icon-arrow-up {
+  background-image: url(../../images/icon-arrow-up.png);
+  background-size: 1rem;
+  width: 2.5rem;
+  height: 1rem;
+}
+
+.icon-arrow-down {
+  background-image: url(../../images/icon-arrow-down.png);
+  background-size: 1rem;
+  width: 2.5rem;
+  height: 1rem;
+}
+
+.icon-lock {
+  background-image: url(../../images/icon-lock.png);
+  background-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-unlock {
+  background-image: url(../../images/icon-unlock.png);
+  background-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-calendar {
+  background-image: url(../../images/icon-calendar.png);
+  background-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-user {
+  background-image: url(../../images/icon-user.png);
+  background-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-info {
+  background-image: url(../../images/icon-info.png);
+  background-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-popup {
+  background-image: url(../../images/icon-user.png);
+  background-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-download {
+  cursor: pointer;
+  /* background-image: url(); */
+  background-repeat: no-repeat;
+  background-size: 1.6rem;
+  background-position: center center;
+}

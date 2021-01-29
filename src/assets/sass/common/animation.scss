@@ -1,0 +1,256 @@
+@keyframes showTopText {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  40%, 60% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showMiddleText {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showBottomText {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showRightText {
+  0% {
+    opacity: 0;
+    transform: translate3d(200%, 40%, 0);
+  }
+  60% {
+    opacity: .1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 40%, 0);
+  }
+}
+
+@keyframes showFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  80% {
+    transform: translateY(0);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+
+  90% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 .1em rgba(#fef0f0,1);
+  }
+  50% {
+    box-shadow: 0 0 0 2.8em rgba(#fef0f0,1);
+  }
+  100% {
+    box-shadow: 0 0 0 .1em rgba(#fef0f0,1);
+  }
+}
+
+@keyframes pulse02 {
+  0% {
+    box-shadow: 0 0 0 .1em rgba(#f9dbdb, 1);
+  }
+  50% {
+    box-shadow: 0 0 0 1.5em rgba(#f9dbdb,1);
+  }
+  100% {
+    box-shadow: 0 0 0 .1em rgba(#f9dbdb,1);
+  }
+}
+
+@keyframes pulseblack {
+  0% {
+    box-shadow: 0 0 0 0em rgba(#000000, .5);
+  }
+  50% {
+    box-shadow: 0 0 0 1.5em rgba(#000000, .5);
+  }
+  100% {
+    box-shadow: 0 0 0 0em rgba(#000000, .5);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+    visibility: visible;
+  }
+  100% {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+@keyframes scalebig {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes scalesmall {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes linewidth {
+  0% {
+    width:0rem;
+    background: #ffffff;
+    visibility: visible;
+  }
+
+  100% {
+    width: 10rem;
+    background: #cccccc;
+    visibility: visible;
+  }
+}
+
+@keyframes linewidth02 {
+  0% {
+    width: 0;
+    visibility: visible;
+  }
+
+  100% {
+    width: 45rem;
+    visibility: visible;
+  }
+}
+
+@keyframes linewidth03 {
+  0% {
+    width:0rem;
+    visibility: visible;
+  }
+  100% {
+    width: 10rem;
+    visibility: visible;
+    border: .01rem dashed #cccccc;
+  }
+}
+
+@keyframes lineopacity {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes dot {
+  0% {
+    // background: #f9f9f9;
+  }
+  100% {
+    background: #57bfcf;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes lineheight {
+  0% {
+    height: 0;
+    visibility: visible;
+  }
+  100% {
+    height: 30rem;
+    visibility: visible;
+  }
+}
+
+
+@keyframes moveup {
+  0% {
+    bottom: 3rem;
+  }
+  100% {
+    bottom: 32rem;
+  }
+}
+
+@keyframes moveright {
+  0% {
+    left: 2rem;
+  }
+  100% {
+    left: 11.5rem;
+  }
+}
+
+@keyframes moveleft {
+  0% {
+    right: -12rem;
+  }
+  100% {
+    right: -2.5rem;
+  }
+}

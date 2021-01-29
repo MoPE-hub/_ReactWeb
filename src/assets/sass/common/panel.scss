@@ -1,0 +1,36 @@
+/**********
+   안내
+**********/
+
+.info {
+  display: block;
+  padding: 1rem 0;
+  &.info-gray {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #999999;
+  }
+}
+
+/*******************
+  블럭/삭제
+*******************/
+
+.block-del {
+  display: flex;
+  justify-content: space-between;
+  background: #efebef;
+  overflow: hidden;
+  border-radius: .5rem;
+  font-size: 1.3rem;
+
+  span {
+    display: block;
+    padding: 1rem;
+  }
+
+  button {
+    background: transparent;
+    font-size: 1.3rem;
+  }
+}

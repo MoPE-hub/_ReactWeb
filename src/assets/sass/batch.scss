@@ -1,0 +1,33 @@
+.batch-extension {
+  .row {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: .1rem solid #efebef;
+    font-size: 1.2em !important;
+    font-weight: 500;
+    color: #999999;
+  }
+
+  ul.batch-input {
+    li {
+      display: flex;
+      margin-bottom: 1rem;
+      position: relative;
+
+      .batch-extension-close {
+        position: absolute;
+        right: 1rem;
+        padding-left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+        background: #ffffff;
+      }
+
+      &:hover .batch-extension-close {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+.btn {
+  display: inline-block;
+  border-radius: .4rem;
+  user-select: none;
+  background-image: none;
+  background-color: transparent;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #333333;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: .4rem .7rem;
+}
+
+button:disabled,
+button[disabled]{
+  background-color: #cccccc !important;
+  border: .1rem solid #cccccc !important;
+}
+
+.btn-blur {
+  -webkit-box-shadow: 0rem 0rem .4rem 0rem rgba(0,0,0,0.35);
+  -moz-box-shadow: 0rem 0rem .4rem 0rem rgba(0,0,0,0.35);
+  box-shadow: 0rem 0rem .4rem 0rem rgba(0,0,0,0.35);
+}
+
+.btn-purple {
+  background-color: #8878FB;
+  border: .1rem solid #8878FB;
+  color: #FFFFFF;
+}
+
+.btn-blue {
+  background-color: #2285c8;
+  border: .1rem solid #2285c8;
+  color: #FFFFFF;
+}
+
+.btn-light-gray {
+  background-color: #D8D8D8;
+  border: .1rem solid #D8D8D8;
+  color: #ffffff;
+}
+
+.btn-dark-gray {
+  background-color: #333333;
+  border: .1rem solid #333333;
+  color: #ffffff;
+}
+
+.btn-gray {
+  background-color: #666666;
+  border: .1rem solid #666666;
+  color: #ffffff;
+}
+
+.btn-red {
+  background-color: #C00000;
+  border: .1rem solid #C00000;
+  color: #FFFFFF;
+}
+
+.btn-white {
+  background-color: #FFFFFF;
+  border: .1rem solid #CCCCCC;
+  color: #7b7d89;
+}
+
+.btn-black {
+  background-color: #333333;
+  border: .1rem solid #333333;
+  color: #FFFFFF;
+}
+
+.btn-turquoise {
+  background-color: #57bfcf;
+  border: .1rem solid #57bfcf;
+  color: #ffffff;
+}
+
+.btn-h-turquoise:hover {
+  background-color: #57bfcf;
+  border: .1rem solid #57bfcf;
+  color: #ffffff;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 0;
+  color: #333333;
+}
+
+.btn-transparent-border {
+  background-color: transparent;
+  border: .1rem solid #ffffff;
+  color: #ffffff;
+  &:hover {
+    background-color: #ffffff;
+    border: .1rem solid #ffffff;
+    color: #333333;
+  }
+}
+
+.btn-default {
+  padding: .8rem 3.6rem;
+}
+
+.btn-search {
+  padding: .8rem 3.6rem;
+}
+
+.btn-table {
+  padding: .8rem 3rem;
+}
+
+.btn-sm {
+  padding: .6rem .8rem;
+}
+
+.btn-md {
+  padding: 1rem 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.btn-lg {
+  padding: 1.5rem 3.8rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-background-none {
+  background: none;
+}
+
+.btn-border-white {
+  padding: 1rem 3rem;
+  border-radius: 0;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-border-gray {
+  padding: 1rem 3rem;
+  border-radius: 0;
+  border: 1px solid #a2a2a2;
+  color: #747474;
+}
+
+.btn-f2f2f2 {
+  width: 80%;
+  font-size: 1.2rem;
+  color: #191919;
+  border: 0;
+  background: #f2f2f2;
+  border-radius: 0;
+}

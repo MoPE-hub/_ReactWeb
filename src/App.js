@@ -1,19 +1,15 @@
-import React, {Component} from 'react';
-import Routes from './route/index';
-import Header from './component/Header';
-import Footer from './component/Footer';
-import './assets/Main.css';
+import React, { Component } from 'react'
+import Route from './route'
 
 class App extends Component {
-  render(){
+
+  render() {
     return (
-      <div className="App">
-        <Header />
-        <Routes />
-        <Footer />
-      </div>
-  );
+      <React.Fragment>
+        <Route />
+      </React.Fragment>
+    )
   }
 }
 
-export default App;
+export default App

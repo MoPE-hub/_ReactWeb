@@ -1,0 +1,40 @@
+/****************
+  ie-scrollbar
+****************/
+
+@media all and (-ms-high-contrast:active), all and (-ms-high-contrast:none) {
+  *::-webkit-scrollbar {
+    position: absolute;
+    width: .5em;
+  }
+
+  *::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #efebef;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    outline: .1rem solid slategrey;
+    border-radius: 1rem;
+  }
+}
+
+/****************
+chrome-scrollbar
+****************/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  *::-webkit-scrollbar {
+    width: .3em;
+  }
+
+  //*::-webkit-scrollbar-track {
+  //  box-shadow: inset 0 0 6px #efebef;
+  //}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #666666;
+    //outline: .1rem solid slategrey;
+    border-radius: 1rem;
+  }
+}

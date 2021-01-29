@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  -ms-display: flexbox;
+  display: -webkit-flex;
+  height: 6.5rem;
+  max-width: 112rem;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  background: url("../../images/kt-logo.png");
+  background-size: 13rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0 8.7rem;
+  text-indent: -9999rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  padding: .8rem 0 .8rem 2.7rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #333333;
+  max-width: 113rem;
+  margin: 0 auto;
+}

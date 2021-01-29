@@ -1,0 +1,261 @@
+section.section-tab {
+  max-width: 100%;
+  padding: 5rem 0 0 0;
+}
+
+/*********************
+      센터 고정 탭
+*********************/
+
+.tab {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  ul {
+    width: auto;
+    text-align: center;
+    li {
+      transition: all 300ms;
+      display: inline-block;
+    }
+    li a {
+      padding: 1rem 1.5rem;
+      background: transparent;
+      color: #888888;
+      font-size: 2.4rem;
+      font-weight: 500;
+    }
+    li a.active {
+      color: #333333;
+      border: 0;
+      background: transparent;
+    }
+  }
+  &.header-tab {
+    ul {
+      display: flex;
+      margin: 2rem auto 0 auto;
+      max-width: 25rem;
+      li {
+        margin: 0 auto;
+        a {
+          font-size: 1.5rem;
+          padding: 0 1rem;
+        }
+      }
+      hr {
+        width: .1rem;
+        height: 1.5rem;
+        padding: 0;
+        margin: .5rem 0;
+      }
+    }
+  }
+}
+
+/*********************
+       전체가 탭
+*********************/
+
+.tab-full {
+  display: flex;
+  flex-flow: row wrap;
+	width: 100%;
+  justify-content: center;
+
+  input[type=radio],
+  .tab-content,
+  .tab-content-02 {
+    display: none;
+  }
+
+  input[type=radio]:checked + label {
+    color: #ffffff;
+    z-index: auto;
+    border: .1rem solid #57bfcf;
+    background: #57bfcf;
+  }
+
+  input[type=radio]:checked + label + .tab-content,
+  input[type=radio]:checked + label + .tab-content-02 {
+    display: block;
+  }
+
+  .tab-mybox {
+    width: 22rem;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .tab-content,
+  .tab-content-02 {
+    width: 100%;
+    margin: 2rem 0 0 0;
+    padding-bottom: 2rem;
+    order: 1;
+    font-weight: 300;
+    line-height: 1.7;
+    // background: #f2f2f2;
+  }
+
+  /***************
+   원본 label 단독임
+   label {}
+  ***************/
+
+  & > label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666666;
+    border: .1rem solid #cccccc;
+    padding: 1.3rem 7rem;
+    margin: 1rem 4rem;
+    position: relative;
+  }
+}
+
+/*********************
+       탭 컴포넌트
+*********************/
+
+.tab-component {
+  background: #f6f9fa;
+  border-radius: .4rem;
+  padding: 0 0;
+  white-space: nowrap;
+  position: relative;
+  z-index: auto;
+
+  ul {
+    display: flex;
+    flex-direction: initial;
+    background-color: inherit;
+    border-radius: .4rem;
+    li {
+      cursor: pointer;
+      -webkit-transition: all 100ms;
+      transition: all 100ms;
+      display: inline-block;
+      position: relative;
+      background-color: inherit;
+      color: #999999;
+      border-radius: .4rem;
+      white-space: nowrap;
+
+      a {
+        padding: 1rem 1.5rem;
+        color: inherit;
+        font-size: 1.4rem;
+        font-weight: 500;
+        border-radius: .4rem;
+        border: .1rem solid transparent;
+        & ~ ul {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          border-bottom-left-radius: .4rem;
+          border-bottom-right-radius: .4rem;
+          /* border: .1rem solid #efebef; */
+          border-top: unset;
+          li {
+            background: inherit;
+            color: #333333;
+            border-radius: 0;
+            &:hover {
+              background: #efebef !important;
+            }
+            &.active {
+              background: #ffffff;
+              color: #333333;
+              border-radius: 0;
+            }
+          }
+        }
+      }
+
+      a.active {
+        color: #333333;
+        background: #ffffff;
+        border: .1rem solid #efebef;
+        border-radius: .4rem;
+        & ~ ul {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          border-bottom-left-radius: .4rem;
+          border-bottom-right-radius: .4rem;
+          border: .1rem solid #efebef;
+          border-top: unset;
+          li {
+            background: #ffffff;
+            color: #333333;
+            border-radius: 0;
+            &:hover {
+              background: #efebef;
+            }
+          }
+        }
+      }
+    }
+
+    li:hover .tab-sub {
+      display: block;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: .4rem;
+      border-bottom-right-radius: .4rem;
+      border-top: unset;
+      li {
+        &:hover {
+          background: #efebef;
+        }
+        &.active {
+          background: #ffffff;
+          color: #333333;
+          border-radius: 0;
+          border: .1rem solid #efebef;
+        }
+      }
+
+    }
+
+  }
+
+  .tab-sub {
+  	position: absolute;
+  	left: 0;
+  	display: none;
+  	width: 100%;
+  	border-bottom-left-radius: 1rem;
+  	border-bottom-right-radius: 1rem;
+  	overflow: hidden;
+  	background-color: inherit;
+  	color: inherit;
+  	margin-top: -.5rem;
+    z-index: 9;
+  	li {
+  	  padding: 1rem;
+  	  display: block;
+      width: 100%;
+  	  text-align: center;
+  	  color: inherit;
+ 	  .sub-title {
+  		font-size: 1.4rem;
+       	font-weight: 500;
+       	color: inherit;
+  	  }
+  	}
+  	li:first-child {
+  	  padding-top: 1rem;
+  	}
+  }
+}
+
+@media (max-width: 600px) {
+  .tab-component {
+  	width: 100%;
+  	a {
+      font-weight: 400 !important;
+  	}
+  }
+}

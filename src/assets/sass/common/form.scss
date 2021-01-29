@@ -1,0 +1,180 @@
+.form-control {
+  display: inline-block;
+  width: 100%;
+  padding: .6rem 1.2rem;
+  color: #555555;
+  background-color: #ffffff;
+  border: .1rem solid #dfe0e2;
+  border-radius: .4rem;
+  font-size: 1.4rem !important;
+}
+
+.input-title {
+  margin: 1.4rem 0 .4rem 0;
+  display: flex;
+  color: #444444;
+  font-size: 1.3rem;
+
+  span.required {
+    display: block;
+    padding-left: .2rem;
+    margin-top: -.1rem;
+  }
+}
+
+.input-text {
+  padding: 1rem 1rem;
+  &.sm {
+     padding: .5rem .5rem;
+     font-size: 1.2rem !important;
+  }
+  &:read-only {
+    background: #f5f5f5;
+  }
+}
+
+.input-textarea {
+  display: block;
+  padding: 1rem 1.6rem;
+  height: 25rem;
+  position: relative;
+  &.auto {
+    padding: 1rem 1.2rem;
+    height: unset
+  }
+}
+
+.input-error {
+  margin: 1rem 0rem;
+  font-size: 1.2rem;
+  color: #ed4337;
+}
+
+/*******************
+ input with clear
+*******************/
+
+.input-w-clear {
+
+  form {
+    position: relative;
+
+    input {
+      padding-right: 4.5rem;
+      &:not(:valid) ~ .icon-clear {
+      	display: none;
+      }
+    }
+
+    .icon-clear {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      padding: 0 1rem;
+      background-color: transparent;
+    }
+
+    .icon-clear:after {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    	content: "\00d7";
+    	width: 1.2rem;
+    	height: 1.2rem;
+    	background-color: #999999;
+    	z-index: 1;
+    	margin: auto;
+    	padding: .4rem;
+    	border-radius: 50%;
+    	color: #ffffff;
+      font-weight: normal;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/*******************
+ input with button
+*******************/
+
+.input-with-btn {
+ 	display: flex;
+  width: 100%;
+  position: relative;
+
+  .input-wrapper {
+    width: 100%;
+  }
+
+ 	.input {
+	 	flex: 1;
+		padding: 1rem;
+		border-radius: .4rem;
+		border-top-right-radius: 0 !important;
+		border-bottom-right-radius: 0 !important;
+		border-right: 0 !important;
+		font-size: 1.4rem;
+		color: #333333;
+ 	}
+
+  > span {
+    border: .1rem solid #dfe0e2;
+    padding: 1rem 1.6rem;
+    border-right: 0;
+    height: 100%;
+    font-size: 1.4rem;
+    i {
+      display: block;
+      text-indent: -999999999rem;
+      width: auto;
+      overflow: hidden;
+    }
+    &.text {
+      border-left: .1rem solid #dfe0e2;
+      cursor: pointer;
+      white-space: nowrap;
+      font-weight: 400;
+    }
+    &.text ~ input {
+      border-left: 0;
+      border-right: .1rem solid #dfe0e2;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: .4rem;
+      border-bottom-right-radius: .4rem;
+      cursor: pointer;
+      white-space: nowrap;
+      font-weight: 400;
+    }
+    &.text.head {
+      border-right: .1rem solid #dfe0e2;;
+      border-top-left-radius: .4rem;
+      border-bottom-left-radius: .4rem;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &.text.lg {
+      padding: 1.5rem 1.2rem;
+    }
+    &:last-child {
+      border-radius: 0 .4rem .4rem 0 !important;
+      border-right: .1rem solid #dfe0e2 !important;
+    }
+  }
+
+  .input.sm {
+    padding: .5rem .5rem !important;
+    ~ span {
+      padding: .5rem .8rem;
+    }
+  }
+
+  .input.lg {
+    padding: 1.5rem 1.2rem;
+  }
+}

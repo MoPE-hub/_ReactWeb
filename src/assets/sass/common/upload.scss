@@ -1,0 +1,52 @@
+.file-list {
+  overflow: scroll;
+  height: 13rem;
+  ul {
+    border-radius: .3rem;
+    background: #eeeeee;
+    padding: .3rem;
+    li {
+      background: #ffffff;
+      display: block;
+      padding: .8rem;
+      border-radius: .3rem;
+      border-bottom: .2rem solid #efebef;
+      position: relative;
+      &:last-child {
+        border-bottom: 0;
+      }
+      .icon-clear {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0 1rem;
+        background-color: transparent;
+      }
+
+      .icon-clear:after {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      	content: "\00d7";
+      	width: 1.2rem;
+      	height: 1.2rem;
+      	background-color: #999999;
+      	z-index: 1;
+      	margin: auto;
+      	padding: .4rem;
+      	border-radius: 50%;
+      	color: #ffffff;
+        font-weight: normal;
+        font-size: 1.2rem;
+      }
+      &:hover button {
+        display: flex;
+      }
+    }
+  }
+}

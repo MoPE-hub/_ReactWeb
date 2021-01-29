@@ -1,0 +1,305 @@
+
+/*****************
+   계약 타입 선택
+*****************/
+
+.contract-type-wrap {
+  width: fit-content;
+  height: fit-content;
+  padding: .1rem .1rem;
+  background: #efebef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .2rem;
+  font-size: 1px;
+
+  inpute[type=radio] {
+    display: none;
+  }
+
+  label {
+    background: #efebef;
+    padding: .4rem 1rem;
+    border-radius: .1rem;
+    font-size: 1rem;
+    display: flex;
+
+    &:first-child {
+      border-radius: .1rem 0 0 .1rem;
+    }
+    &:last-child {
+      border-radius: 0 .1rem .1rem 0;
+    }
+  }
+}
+
+#contract-guide,
+#contract-fix {
+  display: none;
+}
+
+#contract-guide:checked ~ .contract-type-wrap label.contract-guide,
+#contract-fix:checked ~ .contract-type-wrap label.contract-fix {
+  background: #ffffff;
+}
+
+/*****************
+     계약 스텝
+*****************/
+
+.step {
+  font-size: 1.2rem;
+  font-weight: 300;
+  position: absolute;
+  top: 1.8rem;
+  right: .5rem;
+  .ing {
+    font-weight: 500;
+  }
+}
+
+.slider {
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.slider-nav {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 2rem 1.2rem;
+  border-radius: 50%;
+  z-index: 10;
+  outline: .6rem solid #ccc;
+  outline-offset: -.6rem;
+  box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: none;
+}
+
+.slider-nav:checked {
+  -webkit-animation: check 0.4s linear forwards;
+  animation: check 0.4s linear forwards;
+}
+.slider-nav:checked:nth-of-type(1) ~ .slider .slider-inner {
+  left: 0%;
+}
+.slider-nav:checked:nth-of-type(2) ~ .slider .slider-inner {
+  left: -100%;
+}
+.slider-nav:checked:nth-of-type(3) ~ .slider .slider-inner {
+  left: -200%;
+}
+.slider-nav:checked:nth-of-type(4) ~ .slider .slider-inner {
+  left: -300%;
+}
+.slider-nav:checked:nth-of-type(5) ~ .slider .slider-inner {
+  left: -400%;
+}
+.slider-nav:checked:nth-of-type(6) ~ .slider .slider-inner {
+  left: -500%;
+}
+.slider-nav:checked:nth-of-type(7) ~ .slider .slider-inner {
+  left: -600%;
+}
+
+.slider-control {
+  display: flex;
+  cursor: pointer;
+  display: none;
+}
+
+.dialog-button label.disabled {
+  background: #999999 !important;
+  border: .1rem solid #999999;
+  cursor: not-wllowed
+}
+
+.dialog-button label.disabled:active {
+  pointer-events: none;
+}
+
+#slider-1:checked ~ .slider .control-1 {
+    display: block;
+}
+
+#slider-1:checked ~ .slider ~ .dialog-button .control-1,
+#slider-2:checked ~ .slider ~ .dialog-button .control-2,
+#slider-3:checked ~ .slider ~ .dialog-button .control-3,
+#slider-4:checked ~ .slider ~ .dialog-button .control-4,
+#slider-5:checked ~ .slider ~ .dialog-button .control-5,
+#slider-6:checked ~ .slider ~ .dialog-button .control-6,
+#slider-7:checked ~ .slider ~ .dialog-button .control-7 {
+    display: block;
+}
+
+.slider-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 700%;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  align-items: center;
+  &.general {
+    width: 600%;
+  }
+  &.agree {
+    width: 600%;
+  }
+}
+
+.slider-contents {
+  h5 {
+    position: absolute;
+    top: 0;
+  }
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: center;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 8rem;
+
+    .description {
+      width: 100%;
+      min-height: 8rem;
+      padding: 2rem .5rem;
+      color: #666666;
+      text-align: left;
+    }
+  }
+}
+
+.slider-image {
+  font-size: 2.7rem;
+  color: #2196F3;
+}
+
+.slider-caption {
+  font-weight: 500;
+  margin: 2rem 0 1rem;
+  text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.1);
+}
+
+.slider-txt {
+  color: #999;
+  margin-bottom: 3rem;
+  max-width: 30rem;
+}
+
+/*****************
+  계약 타입 설명탭
+*****************/
+
+.step-radio-group {
+  input[type=radio] {
+    display: none;
+  }
+
+  #individual:checked ~ .step-radio-group-inner .individual {
+    color: #333333 !important;
+    background: #ffffff;
+  }
+
+  #chkPkg:checked ~ .step-radio-group-inner .chkPkg {
+    color: #333333 !important;
+    background: #ffffff;
+  }
+
+  #chkAgr:checked ~ .step-radio-group-inner .chkAgr {
+    color: #333333 !important;
+    background: #ffffff;
+  }
+
+  #individual:checked ~ .step-radio-group-extension .individual {
+    height: 2rem;
+    display: block;
+  }
+
+  #chkPkg:checked ~ .step-radio-group-extension .chkPkg {
+    height: 2rem;
+    display: block;
+  }
+
+  #chkAgr:checked ~ .step-radio-group-extension .chkAgr {
+    height: 2rem;
+    display: block;
+  }
+
+  .step-radio-group-inner {
+    display: flex;
+    border-radius: .4rem;
+    overflow: hidden;
+    background: #efefef;
+    padding: .2rem;
+    width: 100%;
+    text-align: center;
+    label {
+      flex: 1 1 100%;
+      color: #8e8e8e !important;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 1.4rem;
+      font-weight: bold;
+      padding: 1rem 2rem;
+      border-radius: .3rem;
+    }
+
+    label:before {
+      display: none !important;
+    }
+  }
+
+  .step-radio-group-extension {
+    .description {
+      display: none;
+    }
+  }
+}
