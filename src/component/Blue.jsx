@@ -8,7 +8,7 @@ class Blue extends Component{
                 <div className="section_box_inner">
                     <div className="wave wave-1"></div>
                     <div className="wave wave-2"></div>
-                    <div className="wave wave-3">ssss</div>
+                    <div className="wave wave-3">ㅇㅇㅇㅇㅇ</div>
                 </div>
             </div>
           </React.Fragment>
