@@ -6,7 +6,7 @@ class Main extends Component {
   render() {
     return(
       <React.Fragment>
-        테스트용 리스트ㅇㅇㅇ
+        테스트용 리스트ㅇㅇㅇㅇㅇㅇㅇ
       </React.Fragment>
     )
   }
