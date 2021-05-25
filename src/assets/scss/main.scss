@@ -1,0 +1,45 @@
+.introduce-box {
+  margin-top: 10rem;
+  height: 50rem;
+  .introduce {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .introduce-text {
+      border-top: .2rem solid #ffffff;
+      ul {
+        li {
+          font-size: 2rem;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}
+
+.portfolio-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .portfolio-list {
+    > li {
+      padding: 2rem;
+      margin: 2rem;
+      border-top: .1rem solid #ffffff;
+      border-bottom: .1rem solid #ffffff;
+    }
+    ul,
+    span {
+      margin: 1rem;
+    }
+    .portfolio-img {
+      display: block;
+      width: 50rem;
+      height: 30rem;
+      background: url("../images/pp-main.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}

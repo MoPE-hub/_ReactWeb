@@ -1,0 +1,16 @@
+header {
+  //display: block;
+  width: 100%;
+  border-bottom: .2rem solid #ffffff;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  background: #282c34;
+  .header-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 2rem;
+  }
+}
