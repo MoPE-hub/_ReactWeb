@@ -8,7 +8,7 @@ import Header from '../component/default/Header'
 import Footer from '../component/default/Footer'
 
 ////////// component //////////
-import Main from '../component/Index'
+import Index from '../component/Index'
 
 const Routes = ({ auth }) => {
   return (
@@ -19,7 +19,7 @@ const Routes = ({ auth }) => {
       <Header />
 
       <Switch>
-        <Route exact path="/" component={Main}/>
+        <Route exact path="/" component={Index}/>
       </Switch>
 
       <Footer />
