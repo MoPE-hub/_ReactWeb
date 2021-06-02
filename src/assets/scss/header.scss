@@ -12,5 +12,20 @@ header {
     height: 100%;
     font-size: 2rem;
     color: #161616;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      li {
+        margin: 0 1rem;
+        padding: 0 1rem;
+        border-left: .1rem solid #161616;
+        border-right: .1rem solid #161616;
+        &:last-child {
+          margin-right: 5rem;
+        }
+      }
+    }
   }
 }

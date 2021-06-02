@@ -9,6 +9,8 @@ import Footer from '../component/default/Footer'
 
 ////////// component //////////
 import Index from '../component/Index'
+import Portfolio from '../component/Portfolio'
+import Animation from '../component/Animation'
 
 const Routes = ({ auth }) => {
   return (
@@ -19,7 +21,9 @@ const Routes = ({ auth }) => {
       <Header />
 
       <Switch>
-        <Route exact path="/" component={Index}/>
+        <Route exact path="/" component={Index} />
+        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/animation" component={Animation} />
       </Switch>
 
       <Footer />

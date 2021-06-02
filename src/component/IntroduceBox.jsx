@@ -8,7 +8,7 @@ class IntroduceBox extends Component {
       <React.Fragment>
         <div className="introduce-box">
 
-          <div className="introduce">
+          {/*<div className="introduce">
             <div className="introduce-text">
               <ul>
                 <li>이름: <span>옥성은</span></li>
@@ -16,7 +16,8 @@ class IntroduceBox extends Component {
                 <li>이메일: <span>okseongeun4@gmail.com</span></li>
               </ul>
             </div>
-          </div>
+          </div>*/}
+          메인
           
         </div>
       </React.Fragment>

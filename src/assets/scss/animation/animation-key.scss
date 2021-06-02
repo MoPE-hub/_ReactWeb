@@ -1,0 +1,51 @@
+@keyframes opacity {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes scale1 {
+  0% {
+    transform: scale(1
+    );
+  }
+  50% {
+    transform: scale(.6);
+  }
+  99% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale2 {
+  0% {
+    transform: scale(1.2);
+  }
+  //10% {
+  //  transform: scale(.6);
+  //}
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.6);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  99% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(1);
+  }
+}

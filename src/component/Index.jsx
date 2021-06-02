@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import FixBackground from '../assets/images/bg-fix.png'
 
 import IntroduceBox from './IntroduceBox'
-import PortfolioBox from './PortfolioBox'
+import BarAnimation from "./animation/bar";
 
 class Main extends Component {
 
@@ -11,9 +10,10 @@ class Main extends Component {
     return(
       <React.Fragment>
         <div className="wrap">
-          <IntroduceBox />
-          <PortfolioBox />
-          <img src={FixBackground} alt="배경" className="background-img"/>
+          {/*<IntroduceBox />*/}
+          <div>
+            안녕하세료~
+          </div>
         </div>
       </React.Fragment>
     )

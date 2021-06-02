@@ -1,6 +1,9 @@
 footer {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  border-top: .1rem solid #ffffff;
+  height: 5rem;
+  border-top: .1rem solid #161616;
   text-align: center;
 }

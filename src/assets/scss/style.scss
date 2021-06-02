@@ -6,7 +6,12 @@
 
 @import 'main';
 @import 'list';
-@import 'animation-key';
-@import 'animation-class';
 
 @import 'util';
+
+// Animation //
+
+@import 'animation/animation-key';
+@import 'animation/animation-class';
+
+@import './animation/bar';

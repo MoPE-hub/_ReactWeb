@@ -1,0 +1,77 @@
+.bar-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46rem;
+    padding: 2rem 1rem;
+    background: #161616;
+    border-radius: 10px;
+    position: relative;
+    span {
+      position: absolute;
+      display: block;
+      width: 5rem;
+      height: 100%;
+      margin: 0 3rem;
+      cursor: pointer;
+      z-index: 99999999;
+      &.ani-scale1:hover {
+        animation: scale1;
+        animation-duration: .3s;
+        //animation-delay: .1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+      &.number-one {
+        left: 1rem;
+        top: .5rem;
+      }
+      &.number-two {
+        left: 10rem;
+        top: .5rem;
+      }
+      &.number-three {
+        left: 19rem;
+        top: .5rem;
+      }
+      &.number-four {
+        left: 28rem;
+        top: .5rem;
+      }
+      &.number-five {
+        left: 38rem;
+        top: .5rem;
+      }
+      &.active {
+        position: absolute;
+        top: -2rem;
+        width: 10rem;
+        height: 5rem;
+        background: #161616;
+        border-radius: 50%;
+        transform: scale(0);
+        z-index: 1;
+        &.one-active {
+          left: -2.5rem;
+        }
+        &.two-active {
+          left: 6.5rem;
+        }
+        &.three-active {
+          left: 15.5rem;
+        }
+        &.four-active {
+          left: 24.5rem;
+        }
+        &.five-active {
+          left: 34.5rem;
+        }
+      }
+    }
+  }
+}
