@@ -1,33 +1,35 @@
 import React, { Component } from 'react'
 
-class ButtonUtil extends Component {
+class TextUtil extends Component {
 
   render() {
 
     return(
       <React.Fragment>
-        <div>
-          <p data-text="NOB" className="text-01">
-            NOB
-          </p>
-        </div>
+        <div className="scroll-mandatory">
+          <div className="scroll">
+            <p data-text="NOB" className="text-01">
+              NOB
+            </p>
+          </div>
 
-        <div>
-          <p data-text="Neon Sign" className="text-02">
-            Neon Sign
-          </p>
-        </div>
+          <div className="scroll">
+            <p data-text="Neon Sign" className="text-02">
+              Neon Sign
+            </p>
+          </div>
 
-        <div>
-          <p data-text="Move Move" className="text-03">
-            Move Move
-          </p>
-        </div>
+          <div className="scroll">
+            <p data-text="Move Move" className="text-03">
+              Move Move
+            </p>
+          </div>
 
-        <div>
-          <p data-text="over-flip" className="text-04">
-            over-flip
-          </p>
+          {/*<div className="scroll">*/}
+          {/*  <p data-text="over-flip" className="text-04">*/}
+          {/*    over-flip*/}
+          {/*  </p>*/}
+          {/*</div>*/}
         </div>
 
       </React.Fragment>
@@ -35,4 +37,4 @@ class ButtonUtil extends Component {
   }
 }
 
-export default ButtonUtil
+export default TextUtil
