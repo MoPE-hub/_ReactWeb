@@ -12,7 +12,8 @@ class Main extends Component {
         <div className="wrap">
           {/*<IntroduceBox />*/}
           <div>
-            안녕하세료~
+            <span>안녕하세료~</span>
+            <span>엉망인 페이지입니다.</span>
           </div>
         </div>
       </React.Fragment>
