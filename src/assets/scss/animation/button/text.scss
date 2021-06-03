@@ -1,0 +1,103 @@
+.ani-box-1 {
+  // text-box //
+
+  .text-box {
+    width: 1200px;
+    margin: 30px auto 0 auto;
+    > div {
+      display: inline-block;
+      background-color: unset;
+      width: 180px;
+      height: 50px;
+      div {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #f2f2f2;
+        background-color: #37b2ba;
+        text-align: center;
+        line-height: 50px;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+
+  // flip-box //
+
+  .flip-text-box {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    color: #ff0000;
+    font-weight: bold;
+    overflow: hidden;
+    .flip {
+      width: 100%;
+      height: 40px;
+      overflow: hidden;
+      .animation {
+        animation-duration: 2s;
+      }
+      > div {
+        height: 4rem;
+        > div {
+          line-height: 4rem;
+          font-size: 2rem;
+          height: 100%;
+        }
+      }
+      > div:first-child {
+        margin: 0 auto;
+        animation-name: flip-box;
+        animation-duration: 24s;
+        animation-iteration-count: infinite;
+      }
+      .nonamex {
+        animation-name: no-nameX;
+        animation-delay: 22s;
+        width: auto;
+        background-color: #75c966;
+        color: white;
+      }
+      .pulse {
+        animation-name: pulse;
+        animation-delay: 18s;
+        width: auto;
+        background-color: #c9c266;
+        color: white;
+      }
+      .rubberband {
+        animation-name: rubberband;
+        animation-delay: 14s;
+        width: auto;
+        background-color: #c97b66;
+        color: white;
+      }
+      .shake {
+        animation-name: shake;
+        animation-delay: 10s;
+        width: auto;
+        background-color: #667fc9;
+        color: white;
+      }
+      .hinge {
+        animation-name: hinge;
+        animation-delay: 6s;
+        width: auto;
+        background-color: #c966b9;
+        color: white;
+      }
+      .yflip {
+        animation-name: yflip;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+        width: auto;
+        background-color: #9866c9;
+        color: white;
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ header {
   position: fixed;
   top: 0;
   background: #ffffff;
+  z-index: 9999999999;
   .header-box {
     display: flex;
     align-items: center;

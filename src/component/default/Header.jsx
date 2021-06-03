@@ -11,7 +11,7 @@ class Header extends Component {
             <ul>
               <li><Link to="/">소개</Link></li>
               <li><Link to="/portfolio">페이지 작업</Link></li>
-              <li><Link to="/animation">애니메이션</Link></li>
+              <li><Link to="/util">유틸 수집소</Link></li>
             </ul>
           </div>
         </header>

@@ -14,4 +14,13 @@
 @import 'animation/animation-key';
 @import 'animation/animation-class';
 
+/* Bar */
 @import './animation/bar';
+
+/* Button */
+@import './animation/button/keyframe';
+@import './animation/button/text';
+@import './animation/button/button-util';
+
+/* Text */
+@import 'src/assets/scss/animation/ani-text';

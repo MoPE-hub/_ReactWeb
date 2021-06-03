@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import BarAnimation from "./animation/bar";
+import BarAnimation from "./AnimationBar";
 
 class Animation extends Component {
 

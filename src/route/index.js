@@ -23,10 +23,10 @@ const Routes = ({ auth }) => {
       <Switch>
         <Route exact path="/" component={Index} />
         <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/animation" component={Animation} />
+        <Route exact path="/util" component={Animation} />
       </Switch>
 
-      <Footer />
+      {/*<Footer />*/}
 
     </Router>
 

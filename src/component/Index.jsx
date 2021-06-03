@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 import IntroduceBox from './IntroduceBox'
-import BarAnimation from "./animation/bar";
+import BarAnimation from "./AnimationBar";
 
 class Main extends Component {
 

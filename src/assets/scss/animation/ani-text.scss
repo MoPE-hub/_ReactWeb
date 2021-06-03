@@ -1,0 +1,272 @@
+p {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  margin: 0;
+  color: #000000;
+  font-size: 10rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-mandatory {
+  height: 50vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  .scroll {
+    scroll-snap-align: start;
+  }
+}
+/***************
+    move text
+***************/
+.text-01 {
+  background: #000000;
+  color: #ffffff !important;
+}
+
+.text-01::before,
+.text-01::after {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: attr(data-text);
+}
+
+.text-01::before {
+  color: cyan;
+  z-index: 2;
+  animation: move01 .3s infinite;
+}
+.text-01::after {
+  color: purple;
+  z-index: 1;
+  animation: move02 .3s infinite;;
+}
+
+@keyframes move01 {
+  0% {
+    transform: translate(2px, -2px);
+  }
+  25% {
+    transform: translate(-3px, 3px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  75% {
+    transform: translate(-3px, 3px);
+  }
+  100% {
+    transform: translate(2px, -2px);
+  }
+}
+
+
+@keyframes move02 {
+  0% {
+    transform: translate(3px, -3px);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(3px, -3px);
+  }
+  75% {
+    transform: translate(-2px, 2px);
+  }
+  100% {
+    transform: translate(3px, -3px);
+  }
+}
+
+
+/***************
+    neon text
+***************/
+
+.text-02 {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  margin: 0;
+  color: #fff;
+  font-size: 10rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: opacity 1s infinite;
+}
+
+.text-02::before,
+.text-02::after {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: attr(data-text);
+}
+
+.text-02::after {
+  /* position: absolute;
+  top: 0; */
+  color: purple;
+  z-index: -2;
+  animation: opacity 1s infinite;
+  text-shadow: #fa1dff 5px 0px 5px;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: .3;
+  }
+  25% {
+    opacity: .1;
+  }
+  50% {
+    opacity: .7;
+  }
+  75% {
+    opacity: .6;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+
+/***************
+    neon text
+***************/
+
+.text-03 {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  margin: 0;
+  color: #000;
+  font-size: 10rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .text-03 {
+  animation: opacity 1s infinite;
+} */
+
+.text-03::before,
+.text-03::after {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: attr(data-text);
+}
+
+.text-03::before {
+  position: absolute;
+  color: #7aff94;
+  z-index: 0;
+  animation: lefttoright 2s 5;
+  text-shadow: #7aff94 5px 0px 5px;
+}
+
+.text-03::after {
+  position: absolute;
+  color: #7aff94;
+  z-index: 0;
+  animation: righttoleft 2s 5;
+  text-shadow: #7aff94 5px 0px 5px;
+}
+
+@keyframes lefttoright {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(20%);
+  }
+  50% {
+    transform: translateX(-20%);
+  }
+  75% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes righttoleft {
+  0% {
+    transform: translateX(100%);
+  }
+  25% {
+    transform: translateX(-20%);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  75% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/***************
+    flip text
+***************/
+
+.text-04 {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  margin: 0;
+  color: #000;
+  font-size: 10rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-04::before,
+.text-04::after {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: attr(data-text);
+}
+
+.text-04::before {
+  position: absolute;
+  color: #fcff7a;
+  z-index: -2;
+  animation: flip 2s infinite;
+  text-shadow: #fcff7a 5px 0px 5px;
+}
+
+.text-04::after {
+  position: absolute;
+  color: #fcff7a;
+  z-index: -2;
+  text-shadow: #fcff7a 5px 0px 5px;
+}
+
+@keyframes flip {
+  0% {
+    transform: translateY(90deg);
+  }
+  100% {
+    transform: translateY(180deg);
+  }
+}

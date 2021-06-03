@@ -1,0 +1,532 @@
+// @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+//colors
+$skyblue: #dbfffe;
+
+// Main wrap //
+
+.buttons-1 .buttons {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+// Button wrap //
+
+.buttons-1 .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.buttons-1 h1 {
+  color: black;
+  font-size: 1.25em;
+  font-weight: 900;
+  margin: 0 0 2em;
+}
+
+.buttons-1 p {
+  color: black;
+  font-size: 12px;
+
+  a {
+    background: rgba(black, 0);
+    border-bottom: 1px solid;
+    color: black;
+    line-height: 1.4;
+    padding: .25em;
+    text-decoration: none;
+
+    &:hover {
+      background: rgba(black, 1);
+      color: $skyblue;
+    }
+  }
+}
+
+//button styles //
+
+//default button //
+.buttons-1 .btn {
+  color: black;
+  cursor: pointer;
+  // display: block;
+  font-size:16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+
+  &:hover { text-decoration: none; }
+
+}
+
+// button 1 //
+
+.buttons-1 .btn-1 {
+  //background: darken($skyblue, 1.5%);
+  font-weight: 100;
+
+  svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  rect {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+}
+
+.buttons-1 .btn-1:hover {
+  //background: rgba($skyblue, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+// button 2 //
+.buttons-1 .btn-2 {
+    letter-spacing: 0;
+}
+
+.buttons-1 .btn-2:hover,
+.buttons-1 .btn-2:active {
+  letter-spacing: 5px;
+}
+
+.buttons-1 .btn-2:after,
+.buttons-1 .btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(black, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.buttons-1 .btn-2:hover:after,
+.buttons-1 .btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: black;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.buttons-1 .btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+// button 3 //
+.buttons-1 .btn-3 {
+  //background: $skyblue;
+  border: 1px solid $skyblue;
+  box-shadow: 0px 2px 0 darken($skyblue, 5%), 2px 4px 6px darken($skyblue, 2%);
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: all 150ms linear;
+}
+
+.buttons-1 .btn-3:hover {
+  //background: $skyblue;
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px black;
+  color: black;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 $skyblue;
+  transition: all 250ms linear;
+}
+
+// button 4 //
+.buttons-1 .btn-4 {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+
+  span {
+    z-index: 20;
+  }
+
+  &:after {
+    background: black;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+}
+
+.buttons-1 .btn-4:hover {
+
+  &:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+// button 5 //
+.buttons-1 .btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.buttons-1 .btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+/////////////////////////////////////////////
+
+.buttons-2 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 60vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  // min-height: 100vh;
+}
+.buttons-2 .button {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid black;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow:hidden;
+  transition: .3s;
+  &:after {
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: black;
+  }
+  &:nth-of-type(2):after {
+    left: 0;
+  }
+  &:nth-of-type(3):after {
+    right: 0;
+    left: auto;
+  }
+  &:nth-of-type(4):after {
+    left: 0;
+    bottom: auto;
+    top: -3px;
+    width: 100%;
+  }
+  &:nth-of-type(5):after {
+    height: 120%;
+    left: -10%;
+    transform: skewX(15deg);
+    z-index: -1;
+  }
+  &:hover {
+    cursor: pointer;
+    &:after {
+      width: 100%;
+      left: 0;
+    }
+    &:nth-of-type(4):after {
+      top: calc(100% - 3px);
+    }
+    &:nth-of-type(5) {
+      color: #5bcaff;
+    }
+    &:nth-of-type(5):after {
+      left: -10%;
+      width: 120%;
+    }
+    // &:nth-of-type(6) {
+    //   flex-grow:3;
+    // }
+    // &:nth-of-type(6):after {
+    //   width: 0%;
+    // }
+    &:nth-of-type(6) {
+      border-radius: 30px;
+    }
+    &:nth-of-type(6):after {
+      width: 0%;
+    }
+    &:nth-of-type(7) {
+      transform: scale(1.2);
+    }
+    &:nth-of-type(7):after {
+      width: 0%;
+    }
+    &:nth-of-type(8) {
+      box-shadow: inset 0px 0px 0px 3px black;
+    }
+    &:nth-of-type(8):after {
+      width: 0%;
+    }
+    &:nth-of-type(9) {
+      box-shadow: 0px 0px 0px 3px black;
+    }
+    &:nth-of-type(9):after {
+      width: 0%;
+    }
+  }
+}
+
+/////////////////////////////////////////////
+
+/*
+  https://developer.mozilla.org/en/docs/Web/CSS/box-shadow
+  box-shadow: [inset?] [top] [left] [blur] [size] [color];
+
+  Tips:
+    - We're setting all the blurs to 0 since we want a solid fill.
+    - Add the inset keyword so the box-shadow is on the inside of the element
+    - Animating the inset shadow on hover looks like the element is filling in from whatever side you specify ([top] and [left] accept negative values to become [bottom] and [right])
+    - Multiple shadows can be stacked
+    - If you're animating multiple shadows, be sure to keep the same number of shadows so the animation is smooth. Otherwise, you'll get something choppy.
+*/
+
+.buttons-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  margin: 0 auto;
+}
+
+// Animate the size, inside
+.buttons-3 .fill:hover,
+.buttons-3 .fill:focus {
+  box-shadow: inset 0 0 0 4rem var(--hover);
+}
+
+// Animate the size, outside
+.buttons-3 .pulse:hover,
+.buttons-3 .pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2rem rgba(#fff,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+// Stack multiple shadows, one from the left, the other from the right
+.buttons-3 .close:hover,
+.buttons-3 .close:focus {
+  box-shadow:
+    inset -7rem 0 0 0 var(--hover),
+    inset 7rem 0 0 0 var(--hover);
+}
+
+// Size can also be negative; see how it's smaller than the element
+.buttons-3 .raise:hover,
+.buttons-3 .raise:focus {
+  box-shadow: 0 0.5rem 0.5rem -0.4rem var(--hover);
+  transform: translateY(-0.25rem);
+}
+
+// Animating from the bottom
+.buttons-3 .up:hover,
+.buttons-3 .up:focus {
+  box-shadow: inset 0 -6.5rem 0 0 var(--hover);
+}
+
+// And from the left
+.buttons-3 .slide:hover,
+.buttons-3 .slide:focus {
+  box-shadow: inset 13rem 0 0 0 var(--hover);
+}
+
+// Multiple shadows, one on the outside, another on the inside
+.buttons-3 .offset {
+  box-shadow:
+    0.3em 0.3rem 0 0 var(--color),
+    inset 0.3rem 0.3rem 0 0 var(--color);
+
+  &:hover,
+  &:focus {
+    box-shadow:
+      0 0 0 0 var(--hover),
+      inset 6rem 6rem 0 0 var(--hover);
+  }
+}
+
+//=== Set button colors
+// If you wonder why use Sass vars or CSS custom properties...
+  // Make a map with the class names and matching colors
+$colors: (
+  fill: #a972cb,
+  pulse: #ef6eae,
+  close: #ff7f82,
+  raise: #ffa260,
+  up: #e4cb58,
+  slide: #8fc866,
+  offset: #19bc8b
+);
+
+// Sass variables compile to a static string; CSS variables are dynamic and inherited
+  // Loop through the map and set CSS custom properties using Sass variables
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+
+// Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
+.buttons-3 button {
+  color: var(--color);
+  transition: 0.25s;
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }
+}
+
+// Basic button styles
+.buttons-3 button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 2rem 4rem;
+}
+
+.buttons-3 h1 { font-weight: 400; }
+
+.buttons-3 code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+/////////////////////////////////////////////
+
+.buttons-4 {
+  // g {
+  //   transform: rotate(90deg);
+  // }
+  svg {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 1.5;
+  }
+
+  svg path {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 1px;
+  }
+
+  svg + svg {
+    margin-left: 1.5rem;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI, sans-serif;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #top,
+  #bottom {
+    stroke-dasharray: 30, 75.39;
+    transition: all 0.6s cubic-bezier(0.6, 0.33, 0.67, 1.29);
+    // transform: rotate(90deg);
+  }
+
+  svg.active #top,
+  svg.active #bottom {
+    stroke-dasharray: 75.39;
+    stroke-dashoffset: -60;
+  }
+
+  svg:nth-child(2) {
+    transform: rotate(0deg);
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  svg:nth-child(2) path {
+    transition: all 0.4s ease-in-out 0.6s;
+  }
+
+  svg:nth-child(2).active {
+    transform: rotate(180deg);
+  }
+
+  .rocket #top {
+    stroke-dasharray: 30, 88;
+  }
+}

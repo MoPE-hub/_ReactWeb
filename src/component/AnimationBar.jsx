@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+import ButtonUtil from './animation/ButtonUtil'
+import ButtonUtil2 from './animation/ButtonUtil2'
+import TextUtil from './animation/TextUtil'
+
 class BarAnimation extends Component {
 
   constructor(props) {
@@ -152,6 +156,23 @@ class BarAnimation extends Component {
             </span>
           </div>
         </div>
+        <h4 className="text-center m-t-20 text-red fs-20">숫자를 클릭하면 하단에 나옵니다.</h4>
+
+        {
+          this.state.tapOne ?
+            <ButtonUtil />
+            : ''
+        }
+        {
+          this.state.tapTwo ?
+            <ButtonUtil2 />
+            : ''
+        }
+        {
+          this.state.tapThree ?
+            <TextUtil />
+            : ''
+        }
       </React.Fragment>
     )
   }
