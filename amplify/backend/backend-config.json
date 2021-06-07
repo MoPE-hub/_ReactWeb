@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "reactwebd45ca79b": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
