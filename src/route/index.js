@@ -12,6 +12,9 @@ import Index from '../component/Index'
 import Portfolio from '../component/Portfolio'
 import Animation from '../component/Animation'
 
+////////// component //////////
+import Login from '../component/Login.jsx'
+
 const Routes = ({ auth }) => {
   return (
 
@@ -21,7 +24,8 @@ const Routes = ({ auth }) => {
       <Header />
 
       <Switch>
-        <Route exact path="/" component={Index} />
+        {/*<Route exact path="/" component={Index} />*/}
+        <Route exact path="/" component={Login} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/util" component={Animation} />
       </Switch>

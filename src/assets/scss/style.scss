@@ -7,7 +7,11 @@
 @import 'main';
 @import 'list';
 
+@import 'color';
 @import 'util';
+
+/* Amplify */
+@import 'src/assets/scss/login';
 
 // Animation //
 
@@ -23,4 +27,4 @@
 @import './animation/button/button-util';
 
 /* Text */
-@import 'src/assets/scss/animation/ani-text';
+@import './animation/ani-text';

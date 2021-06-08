@@ -1,3 +1,7 @@
+// Main color : #2d3354
+
+$main-color: #2d3354;
+
 @font-face {
   font-family:Noto;
   src:url(../font/NotoSansCJKkr-Regular.eot),
@@ -6,7 +10,7 @@
 
 html,
 body {
-  background: #ffffff;
+  background: $main-color;
   height: 80vh;
 }
 
