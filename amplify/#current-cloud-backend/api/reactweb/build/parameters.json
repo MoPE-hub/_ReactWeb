@@ -1,0 +1,8 @@
+{
+    "CreateAPIKey": 1,
+    "AppSyncApiName": "reactweb",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-amplify7a2319dad48d4-staging-70212-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/e13ebb08e7fb598113095f3687a131415ddd17b0"
+}
