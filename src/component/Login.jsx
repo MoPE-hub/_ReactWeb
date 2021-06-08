@@ -30,7 +30,7 @@ const Login = (props) => {
           <fieldset>
 
             <div>
-              <span className="login-title">아이디</span>
+              <span className="login-title">아이디 테스트</span>
               <input
                 type="text"
                 id="userId"
