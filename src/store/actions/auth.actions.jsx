@@ -1,7 +1,5 @@
 import { authConstants } from '../constants'
 import { authService, defaultService } from '../services'
-import { alertActions, loaderActions } from '../'
-import { errorMessages } from '../../messages'
 // import history from '../../../route/history'
 // import moment from "moment";
 

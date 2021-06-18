@@ -28,7 +28,9 @@ p {
 }
 
 .text-01::before,
-.text-01::after {
+.text-01::after,
+.info-text-01:before,
+.info-text-01:after {
   position: absolute;
   display: flex;
   align-items: center;
@@ -36,13 +38,15 @@ p {
   content: attr(data-text);
 }
 
-.text-01::before {
-  color: cyan;
+.text-01::before,
+.info-text-01:before {
+  color: #c1d1ff;
   z-index: 2;
   animation: move01 .3s infinite;
 }
-.text-01::after {
-  color: purple;
+.text-01::after,
+.info-text-01:after {
+  color: #007580;
   z-index: 1;
   animation: move02 .3s infinite;;
 }
@@ -65,7 +69,6 @@ p {
   }
 }
 
-
 @keyframes move02 {
   0% {
     transform: translate(3px, -3px);
@@ -83,7 +86,6 @@ p {
     transform: translate(3px, -3px);
   }
 }
-
 
 /***************
     neon text

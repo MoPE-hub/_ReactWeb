@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+// import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+
 const Login = (props) => {
 
   const [ state, setState ] = useState({})
@@ -60,9 +62,15 @@ const Login = (props) => {
 
           <button className="login-btn">로그인</button>
         </form>
+
+
+
+
+        {/*<AmplifySignOut />*/}
       </div>
     </React.Fragment>
   )
 }
 
 export default Login;
+// export default withAuthenticator(Login);

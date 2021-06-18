@@ -49,3 +49,13 @@
     transform: scale(1);
   }
 }
+
+@keyframes navigationOpacity {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: .6;
+  }
+}

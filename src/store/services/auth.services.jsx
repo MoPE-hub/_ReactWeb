@@ -5,11 +5,11 @@ export const authService = {
   logOut,
 }
 
-async function logIn(userName, password) {
+async function logIn(userId, password) {
 
   return await axios.post(
-    process.env.REACT_APP_API_URL + '/econtract/portal/signin',
-    'userId=' + userName +
+    'database-1.ccfwawnvxlkl.us-east-2.rds.amazonaws.com',
+    'userId=' + userId +
     '&password=' + password
   )
 }

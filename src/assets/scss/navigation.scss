@@ -1,0 +1,44 @@
+.navigation-wrap {
+  position: fixed;
+  top: 0;
+  width: 30rem;
+  height: 100vh;
+  background: #000000;
+  z-index: 999999;
+  opacity: .6;
+  animation: navigationOpacity;
+  animation-delay: 0s;
+  animation-duration: .3s;
+  .navigation-box {
+    padding: 10rem 3rem;
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 2rem 0;
+        font-size: 1.6rem;
+        cursor: pointer;
+        #icon-arrow-right {
+          fill: #000000;
+          margin-right: 2rem;
+        }
+        &:hover {
+          #icon-arrow-right {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .img-navigation {
+    position: fixed;
+    left: -2rem;
+    bottom: -2rem;
+    width: 30rem;
+  }
+}
+
+.navigation-wrap.none {
+  display: none;
+}

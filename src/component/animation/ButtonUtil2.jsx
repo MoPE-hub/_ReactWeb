@@ -15,7 +15,7 @@ class ButtonUtil2 extends Component {
               </svg>
               Hover
             </a>
-            {/*svg hover inspired by https://codepen.io/karimbalaa/pen/qERbBY?editors=110*/}
+            {/*arrowRight hover inspired by https://codepen.io/karimbalaa/pen/qERbBY?editors=110*/}
 
             <a href="/" className="btn btn-2">Hover</a>
 
@@ -64,7 +64,7 @@ class ButtonUtil2 extends Component {
 
         {/*  <h1>SVG Interaction</h1>*/}
         {/*  <div className="icons">*/}
-        {/*    <svg*/}
+        {/*    <arrowRight*/}
         {/*      width="300"*/}
         {/*      height="300"*/}
         {/*      viewBox="0 0 32 42"*/}
@@ -90,8 +90,8 @@ class ButtonUtil2 extends Component {
         {/*          <path id="middle" d="M390,284.967L420,284.967"/>*/}
         {/*        </g>*/}
         {/*      </g>*/}
-        {/*    </svg>*/}
-        {/*    <svg*/}
+        {/*    </arrowRight>*/}
+        {/*    <arrowRight*/}
         {/*      width="300"*/}
         {/*      height="300"*/}
         {/*      viewBox="0 0 32 42"*/}
@@ -121,8 +121,8 @@ class ButtonUtil2 extends Component {
         {/*          </g>*/}
         {/*        </g>*/}
         {/*      </g>*/}
-        {/*    </svg>*/}
-        {/*    <svg*/}
+        {/*    </arrowRight>*/}
+        {/*    <arrowRight*/}
         {/*      width="265"*/}
         {/*      height="265"*/}
         {/*      viewBox="0 0 36 22"*/}
@@ -146,7 +146,7 @@ class ButtonUtil2 extends Component {
         {/*          </g>*/}
         {/*        </g>*/}
         {/*      </g>*/}
-        {/*    </svg>*/}
+        {/*    </arrowRight>*/}
         {/*  </div>*/}
 
         {/*</section>*/}

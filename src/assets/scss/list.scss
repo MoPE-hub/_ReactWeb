@@ -1,1 +1,35 @@
-
+.list-toggle {
+  width: 100rem;
+  max-width: 100rem;
+  margin: 20rem;
+  //border: .1rem solid #ffffff;
+  li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    input[type=radio] {
+      display: none;
+    }
+    input:checked ~ .accordion-open {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 6rem;
+    }
+    .title-qna {
+      width: 100%;
+      padding: 1rem 0;
+      font-size: 2rem;
+      font-weight: bold;
+      border-bottom: .1rem solid #ffffff;
+    }
+    .accordion-open {
+      display: none;
+      span {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

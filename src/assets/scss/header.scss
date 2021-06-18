@@ -1,18 +1,28 @@
 header {
   width: 100%;
-  border-bottom: .2rem solid #161616;
+  border-bottom: .2rem solid #ffffff;
   height: 6rem;
   position: fixed;
   top: 0;
-  background: #ffffff;
+  background: #2d3354;
   z-index: 9999999999;
   .header-box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 100%;
     font-size: 2rem;
     color: #161616;
+    div {
+      width: 20rem;
+      margin: 0 1rem;
+      span {
+        border: none;
+        //background: none;
+        //font-size: 2rem;
+        cursor: pointer;
+      }
+    }
     ul {
       display: flex;
       align-items: center;
@@ -21,8 +31,8 @@ header {
       li {
         margin: 0 1rem;
         padding: 0 1rem;
-        border-left: .1rem solid #161616;
-        border-right: .1rem solid #161616;
+        border-left: .1rem solid #ffffff;
+        border-right: .1rem solid #ffffff;
         &:last-child {
           margin-right: 5rem;
         }

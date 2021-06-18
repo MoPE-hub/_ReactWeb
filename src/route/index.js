@@ -6,14 +6,13 @@ import history from './history'
 ////////// defalut //////////
 import Header from '../component/default/Header'
 import Footer from '../component/default/Footer'
+import DefaultLayout from "../layout/DefaultLayout";
 
 ////////// component //////////
 import Index from '../component/Index'
 import Portfolio from '../component/Portfolio'
 import Animation from '../component/Animation'
-
-////////// component //////////
-import Login from '../component/Login.jsx'
+import QnA from '../component/qna/QnA'
 
 const Routes = ({ auth }) => {
   return (
@@ -21,14 +20,15 @@ const Routes = ({ auth }) => {
     <Router
       history={history}
     >
-      <Header />
-
-      <Switch>
-        {/*<Route exact path="/" component={Index} />*/}
-        <Route exact path="/" component={Login} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/util" component={Animation} />
-      </Switch>
+      <DefaultLayout>
+        <Switch>
+          <Route exact path="/" component={Index} />
+          {/*<Route exact path="/" component={Login} />*/}
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/util" component={Animation} />
+          <Route exact path="/qna" component={QnA} />
+        </Switch>
+      </DefaultLayout>
 
       {/*<Footer />*/}
 
