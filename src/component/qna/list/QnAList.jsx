@@ -13,7 +13,7 @@ const NavigationList = [
   },
   {
     title: '현재 페이지에 대한 설명 좀 부탁드립니다.',
-    description: 'React를 사용했고 서버는 AWS에 올라가 있습니다. 간단한 state변경은 컴포넌트에서 진행했지만 사이드 메뉴의 경우에는 Redux를 사용했습니다.\ndddddd'
+    description: '개인 작업물을 올리거나 소장하고 싶은 유틸을 저장하는 용도로 작업 되었습니다. 사이트는 React를 사용했고 서버는 AWS에 올라가 있습니다.'
   },
 ]
 
