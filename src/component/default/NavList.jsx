@@ -5,11 +5,11 @@ const NavigationList = [
   },
   {
     title: '페이지 작업',
-    link: '/portfolio'
+    link: '/'
   },
   {
     title: '유틸 수집소',
-    link: '/util'
+    link: '/'
   },
   {
     title: 'Q&A',

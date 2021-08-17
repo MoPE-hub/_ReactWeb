@@ -24,7 +24,7 @@ p {
 ***************/
 .text-01 {
   background: #000000;
-  color: #ffffff !important;
+  color: #c80000 !important;
 }
 
 .text-01::before,
@@ -40,13 +40,13 @@ p {
 
 .text-01::before,
 .info-text-01:before {
-  color: #c1d1ff;
+  color: #ffffff;
   z-index: 2;
   animation: move01 .3s infinite;
 }
 .text-01::after,
 .info-text-01:after {
-  color: #007580;
+  color: #4100e3;
   z-index: 1;
   animation: move02 .3s infinite;;
 }

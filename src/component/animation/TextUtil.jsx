@@ -8,8 +8,8 @@ class TextUtil extends Component {
       <React.Fragment>
         <div className="scroll-mandatory">
           <div className="scroll">
-            <p data-text="NOB" className="text-01">
-              NOB
+            <p data-text="펜디" className="text-01">
+              펜디
             </p>
           </div>
 
