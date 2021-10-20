@@ -4,11 +4,16 @@ h4.title {
   text-align: center;
 }
 
+h5.sub-title {
+  margin: 3rem 0 1rem 0;
+  font-size: 2.4rem;
+}
+
 .explain {
   display: block;
   font-size: 2rem;
   margin: 1rem 0;
-  border-bottom: .1rem solid #868991;
+  line-height: 3rem;
 }
 
 a {

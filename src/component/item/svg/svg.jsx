@@ -2,7 +2,7 @@ import React from "react";
 
 export const ArrowRight = () => {
   return (
-    <svg version="1.1" id="icon-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512" width="3rem" style={{"enable-background": "new 0 0 512 512"}}>
+    <svg version="1.1" id="icon-arrow-right" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512" width="3rem" style={{"enableBackground": "new 0 0 512 512"}}>
       <g>
         <g>
           <path

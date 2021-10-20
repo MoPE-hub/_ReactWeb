@@ -3,12 +3,9 @@
   top: 0;
   width: 30rem;
   height: 100vh;
-  background: #000000;
+  background: #4775bf;
+  border-right: .1rem solid #ffffff;
   z-index: 999999;
-  opacity: .6;
-  animation: navigationOpacity;
-  animation-delay: 0s;
-  animation-duration: .3s;
   .navigation-box {
     padding: 10rem 3rem;
     ul {
@@ -20,7 +17,7 @@
         font-size: 1.6rem;
         cursor: pointer;
         #icon-arrow-right {
-          fill: #000000;
+          background: #4775bf;
           margin-right: 2rem;
         }
         &:hover {
@@ -37,8 +34,4 @@
     bottom: -2rem;
     width: 30rem;
   }
-}
-
-.navigation-wrap.none {
-  display: none;
 }

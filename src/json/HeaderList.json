@@ -1,0 +1,32 @@
+{
+  "NavigationList": [
+    {
+      "title": "메인",
+      "link": "/"
+    },
+    {
+      "title": "HTML",
+      "link": "/html"
+    },
+    {
+      "title": "CSS",
+      "link": "/css"
+    },
+    {
+      "title": "JavaScript",
+      "link": "/javascript"
+    },
+    {
+      "title": "React",
+      "link": "/react"
+    },
+    {
+      "title": "Vue",
+      "link": "/vue"
+    },
+    {
+      "title": "React-Native",
+      "link": "/react-native"
+    }
+  ]
+}

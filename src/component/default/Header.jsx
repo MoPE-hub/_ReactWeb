@@ -1,28 +1,30 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { commonActions } from '../../store/actions'
+import {commonActions, navigationActions} from '../../store/actions'
 import isNav from "../../store/reducers/common.reducers";
-import NavigationList from "./NavList";
+import NavigationList from "../../json/HeaderList.json";
+import nav from "../../store/reducers/navigation.reducers";
 
 const Header = props => {
 
+  const { HeaderNav } = props
+
   const [ state, setState ] = useState({})
 
-  // const { nav } = props
+  useEffect(() => {
+    props.HeaderLoad()
+  }, [HeaderNav])
 
   return(
     <React.Fragment>
       <header>
         <div className="header-box">
-          <div>
-            <span className="icon-gnb" onClick={() => props.navOpen()}></span>
-          </div>
           <ul>
             {
-              NavigationList.map((data, index) => {
+              props.nav.HeaderList.map((data, index) => {
                 return (
-                  <li key={index}>
+                  <li onClick={() => props.NavLoad(data.title)} key={index}>
                     <Link to={data.link}>{data.title}</Link>
                   </li>
                 )
@@ -37,12 +39,16 @@ const Header = props => {
 
 const mapStateToProps = state => {
   return {
-    common: state.common
+    common: state.common,
+    SubNav: state.nav,
+    nav: state.nav
   }
 }
 
 const actionCreators = {
   navOpen: commonActions.navOpen,
+  NavLoad: navigationActions.NavLoad,
+  HeaderLoad: navigationActions.HeaderLoad
 }
 
 export default connect(

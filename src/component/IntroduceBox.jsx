@@ -17,7 +17,8 @@ class IntroduceBox extends Component {
               </ul>
             </div>
           </div>*/}
-          메인
+          혼자 공부하고 배운것들을 끄적끄적 적어 놓는 곳입니다.
+          사실 나중에 찾기가 너무 귀찮아서...
           
         </div>
       </React.Fragment>

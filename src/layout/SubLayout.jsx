@@ -4,18 +4,19 @@ import { connect } from 'react-redux'
 import Header from '../component/default/Header'
 import Navigation from "../component/default/Navigation";
 
-const DefaultLayout = ({ children }) => {
+const SubLayout = ({ children }) => {
 
   return (
     <React.Fragment>
-			<Header />
-        {children}
+      <Header />
+      <Navigation />
+      {children}
     </React.Fragment>
   )
 }
 
 const mapStateToProps = state => ({
-  //
+  navigationLoad: state.navigation
 })
 
 const actionCreators = {
@@ -25,4 +26,4 @@ const actionCreators = {
 export default connect(
   mapStateToProps,
   actionCreators,
-)(DefaultLayout)
+)(SubLayout)

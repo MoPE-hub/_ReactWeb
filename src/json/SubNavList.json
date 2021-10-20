@@ -1,0 +1,44 @@
+{
+  "NavigationList": {
+    "HTML": [
+      {
+        "path": "/html/1",
+        "title": "1. HTML"
+      },
+      {
+        "path": "/html/2",
+        "title": "2. HTML"
+      }
+    ],
+    "CSS": [
+      {
+        "path": "/css/1",
+        "title": "1. CSS"
+      }
+    ],
+    "JavaScript": [
+      {
+        "path": "/javascript/1",
+        "title": "1. JavaScript"
+      }
+    ],
+    "React": [
+      {
+        "path": "/react/1",
+        "title": "1. Redux-Persist"
+      }
+    ],
+    "Vue": [
+      {
+        "path": "/vue/1",
+        "title": "1. Vue"
+      }
+    ],
+    "React-Native": [
+      {
+        "path": "/react-native/1",
+        "title": "1. React-Native"
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 // Main color : #2d3354
 
-$main-color: #2d3354;
+$main-color: #4775bf;
 
 @font-face {
   font-family:Noto;
@@ -11,7 +11,12 @@ $main-color: #2d3354;
 html,
 body {
   background: $main-color;
-  height: 80vh;
+  min-height: 100vh;
+}
+
+#root {
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 * {
@@ -26,6 +31,41 @@ body {
 
 .main {
   font-size: 2.4rem;
+}
+
+// scroll-bar //
+
+@media all and (-ms-high-contrast:active), all and (-ms-high-contrast:none) {
+  *::-webkit-scrollbar {
+    position: absolute;
+    width: .5em;
+  }
+
+  *::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #efebef;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    outline: .1rem solid slategrey;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  *::-webkit-scrollbar {
+    width: .3em;
+  }
+
+  //*::-webkit-scrollbar-track {
+  //  box-shadow: inset 0 0 6px #efebef;
+  //}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #4775bf;
+    //outline: .1rem solid slategrey;
+    border-radius: 1rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {

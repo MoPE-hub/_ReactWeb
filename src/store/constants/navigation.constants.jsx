@@ -1,0 +1,5 @@
+export const navigationConstants = {
+  NAVIGATION_LOAD: "NAVIGATION_LOAD",
+
+  SUB_NAVIGATION_LOAD: "SUB_NAVIGATION_LOAD"
+}

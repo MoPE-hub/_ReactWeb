@@ -1,33 +1,36 @@
 .wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex(center, center, 3);
   height: 100vh;
-  background: #2d3354;
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    span {
+  .main {
+    @include flex(center, center, 1);
+    h3 {
       font-size: 3rem;
+    }
+    .link-box {
+      @include flex(center, center, 1);
+      margin: 5rem 0;
+      ul {
+        //margin: 2rem 0;
+        padding: 2rem 0;
+        li {
+          width: 20rem;
+          text-align: center;
+          cursor: pointer;
+          a {
+            font-size: 2.4rem;
+          }
+        }
+      }
     }
   }
 }
 
 .introduce-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(center, center, 3);
   width: 100rem;
   padding-top: 10rem;
-  //border-top: .2rem solid #000000;
-  //border-bottom: .2rem solid #000000;
   .introduce {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    @include flex(center, flex-start, 3);
     padding: 5rem;
     .introduce-text {
       text-align: center;
@@ -59,9 +62,7 @@
 }
 
 .portfolio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(center, center, 3);
   margin: 10rem 0;
   .portfolio-box {
     width: 100rem;

@@ -4,10 +4,10 @@ import Route from './route'
 function App() {
 
   return (
-    <div className="App">
+    <React.Fragment>
       <Route />
       {/*<AmplifySignOut />*/}
-    </div>
+    </React.Fragment>
   );
 }
 
