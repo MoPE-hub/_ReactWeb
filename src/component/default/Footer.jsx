@@ -6,7 +6,7 @@ class Footer extends Component {
     return(
       <React.Fragment>
         <footer>
-          작업중입니다.
+          작업중입니다.테스트
         </footer>
       </React.Fragment>
     )
