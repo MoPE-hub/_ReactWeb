@@ -17,23 +17,24 @@ import QnA from '../component/qna/QnA'
 import Introduce from '../component/IntroduceBox'
 
 ////////// html //////////
-import Html1 from '../component/study/html/Html1'
+import HTMLMain from '../component/study/html'
 
 ////////// css //////////
-// import Css from '../component/study/html/Html1'
+import CssMain from '../component/study/css'
+import MediaQuery from '../component/study/css/MediaQuery'
 
 ////////// javascript //////////
-// import JavaScript from '../component/study/javascript//Html1'
+import JavaScriptMain from '../component/study/javascript'
 
 ////////// react //////////
 import ReactMain from '../component/study/react'
 import ReduxPersist from '../component/study/react/ReduxPersist'
 
 ////////// vue //////////
-// import Vue from '../component/study/html/Html1'
+import VueMain from '../component/study/vue'
 
 ////////// react-native //////////
-// import ReactNative from '../component/study/html/Html1'
+import ReactNativeMain from '../component/study/react-native'
 
 const Routes = ({ auth }) => {
   return (
@@ -75,6 +76,7 @@ const Routes = ({ auth }) => {
         // HTML
 
         // CSS
+        '/css/1',
 
         // JavaScript
 
@@ -89,16 +91,17 @@ const Routes = ({ auth }) => {
         <SubLayout>
           <Switch>
 
-            <Route exact path="/html" component={Html1} />
-            <Route exact path="/css" component={Html1} />
-            <Route exact path="/javascript" component={Html1} />
+            <Route exact path="/html" component={HTMLMain} />
+            <Route exact path="/css" component={CssMain} />
+            <Route exact path="/javascript" component={JavaScriptMain} />
             <Route exact path="/react" component={ReactMain} />
-            <Route exact path="/vue" component={Html1} />
-            <Route exact path="/react-native" component={Html1} />
+            <Route exact path="/vue" component={VueMain} />
+            <Route exact path="/react-native" component={ReactNativeMain} />
 
             {/* HTML */}
 
             {/* CSS */}
+            <Route exact path="/css/1" component={MediaQuery} />
 
             {/* JavaScript */}
 

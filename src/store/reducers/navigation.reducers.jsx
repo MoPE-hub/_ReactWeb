@@ -10,7 +10,6 @@ const initialState = {
 export default function nav(state = initialState, action) {
   switch (action.type) {
     case navigationConstants.NAVIGATION_LOAD:
-      console.log(HeaderList.NavigationList)
       return {
         ...state,
         HeaderList: HeaderList.NavigationList

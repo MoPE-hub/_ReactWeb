@@ -1,21 +1,15 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import {connect} from "react-redux";
 import {navigationActions} from "../store/actions";
 
 const Main = (props) => {
 
-  const target = document.getElementsByClassName('open-test')
-
-  const isOpen = () => {
-    target[0].style.height = "400px"
-  }
-
   return(
     <React.Fragment>
       <div className="wrap">
         <div className="main">
-          <h3>그냥 혼자 이것저것 적어놓는 곳</h3>
+          <h3 className="text-blue">그냥 혼자 이것저것 적어놓는 곳</h3>
           <div className="link-box">
             <ul className="dis-flex">
               <li><Link to="/html" onClick={() => props.NavLoad('HTML')}>HTML</Link></li>

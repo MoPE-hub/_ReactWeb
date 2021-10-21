@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {connect} from "react-redux";
 
-const Html1 = (props) => {
+const HTMLMain = (props) => {
 
   return(
     <React.Fragment>
-      <div className="wrap">
-        html
+      <div className="description-box">
+        <h4 className="title">HTML을 공부하면서 이것저것 적어놓은 곳</h4>
       </div>
     </React.Fragment>
   )
@@ -24,4 +24,4 @@ const actionCreators = {
 export default connect(
   mapStateToProps,
   actionCreators,
-)(Html1)
+)(HTMLMain)

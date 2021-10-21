@@ -4,16 +4,12 @@
       {
         "path": "/html/1",
         "title": "1. HTML"
-      },
-      {
-        "path": "/html/2",
-        "title": "2. HTML"
       }
     ],
     "CSS": [
       {
         "path": "/css/1",
-        "title": "1. CSS"
+        "title": "1. @media 쿼리"
       }
     ],
     "JavaScript": [
