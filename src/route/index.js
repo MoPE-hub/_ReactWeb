@@ -18,6 +18,7 @@ import Introduce from '../component/IntroduceBox'
 
 ////////// html //////////
 import HTMLMain from '../component/study/html'
+import HTML1 from '../component/study/html/html'
 
 ////////// css //////////
 import CssMain from '../component/study/css'
@@ -74,6 +75,7 @@ const Routes = ({ auth }) => {
         '/react-native',
 
         // HTML
+        '/html/1',
 
         // CSS
         '/css/1',
@@ -99,6 +101,7 @@ const Routes = ({ auth }) => {
             <Route exact path="/react-native" component={ReactNativeMain} />
 
             {/* HTML */}
+            <Route exact path="/html/1" component={HTML1} />
 
             {/* CSS */}
             <Route exact path="/css/1" component={MediaQuery} />
